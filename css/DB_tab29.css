@@ -1,0 +1,32 @@
+﻿#d_tab29 ul,#d_tab29 li{margin:0;padding:0;list-style:none}
+#d_tab29 img{border:0;vertical-align:top}
+
+
+/*旋转相册块*/
+#d_tab29{position:relative; width:620px; height:583px;
+         overflow: hidden;
+         text-align:left;
+		 margin-left:130px;
+		 margin-top: 40px;
+		 padding-top: 60px;
+		 z-index: 0;
+		}
+
+/*相册*/		 
+#d_tab29 .d_img{position:relative;margin:-40px 0px 0px -120px;width:830px;height:100%} 
+#d_tab29 .d_img li{position:absolute;display:none;z-index:0 }
+/*每块图片*/
+#d_tab29 .d_img li img{width:680px ; border:black 1px solid;height:350px; z-index: 0; }
+	
+ /*旋转中心五张图片的位置*/
+#d_tab29 .d_img li.d_pos1{display:block;width:680px; height:350px; left:0%;top:20px;z-index:0; }
+#d_tab29 .d_img li.d_pos2{display:block;width:680px; height:350px;left:1%;top:20px;z-index:1}
+#d_tab29 .d_img li.d_pos3{display:block;width:680px; height:350px; left:10%;top:20px;z-index:3;}
+#d_tab29 .d_img li.d_pos4{display:block;width:680px; height:350px;right:5%;top:20px;z-index:1}
+#d_tab29 .d_img li.d_pos5{display:block;width:680px; height:350px;right:0%;top:20px;z-index:0}
+
+
+
+/*切换按钮*/
+#d_tab29 .d_next{position:absolute;margin-left:560px;top:200px;z-index:10;cursor:pointer}
+#d_tab29 .d_prev{position:absolute;margin-left:5px;top:200px;z-index:10;cursor:pointer}
