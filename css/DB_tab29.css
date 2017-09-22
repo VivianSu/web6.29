@@ -3,15 +3,18 @@
 
 
 /*旋转相册块*/
-#d_tab29{position:relative; width:620px; height:583px;
-         overflow: hidden;
-         text-align:left;
-		 margin-left:130px;
-		 margin-top: 40px;
-		 padding-top: 60px;
-		 z-index: 0;
-		}
-
+#d_tab29
+  {
+	 position:relative; 
+	 width:620px; 
+	 height:383px;
+     overflow: hidden;
+     text-align:left;
+     margin-top: 40px;
+	 margin: 0px auto 0 auto;
+	 padding-top: 100px;
+	 z-index: 0;
+  }
 /*相册*/		 
 #d_tab29 .d_img{position:relative;margin:-40px 0px 0px -120px;width:830px;height:100%} 
 #d_tab29 .d_img li{position:absolute;display:none;z-index:0 }

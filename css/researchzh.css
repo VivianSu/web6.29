@@ -14,13 +14,16 @@
 }
 .title_nav
 {
-	width:350px; 
-	margin:0px 0px 20px 0px;
+	width: 150px;
+    border-bottom: rgb(112,173,71) 2px solid;
+    margin: 30px 0px 10px 30px;
+    text-align: center;
 }
 #title11,#title12,#title13,#title21,#title22,#title23,#title24,#title31,#title32,#title33,#title4
 {
-	margin: 20px 0px 20px 50px;
 	/*border:1px black solid;*/
+	float: left;
+	margin-left: 10px;
 }
 .title_con
 {
@@ -31,20 +34,21 @@
 	float: left;
 	width: 87%;
 	line-height: 25px;
-	padding: 5px 20px;
-	margin: 10px 4% 10px 5%;
+	padding: 5px 10px;
 }
 #title11_img,#title12_img,#title13_img,#title13_img2,#title21_img,#title22_img,#title23_img,#title24_img,#title31_img,#title32_img,#title33_img
 {
 	float: left;
-	width: 40%;
-	margin: 10px 5px 20px 5px;
+	width: 300px;
+	box-shadow: 1px 1px 1px black;
+	margin-top: 10px;
+	/*margin: 10px 5px 20px 5px;*/
 	/*border:1px black solid;*/
 }
 #title11_text,#title12_text,#title13_text,#title13_text2,#title21_text,#title22_text,#title23_text,#title24_text,#title31_text,#title32_text,#title33_text
 {
 	float: left;
-	width: 50%;
+	width: 350px;
 	line-height: 25px;
 	padding: 5px 20px;
 	margin: 10px 10px 20px 10px;
@@ -69,13 +73,7 @@
 {
 	float: left;
 }
-.huojiang
-{
-	float: left;
-	width: 320px;
-	height: auto;
-	margin: 20px 30px 20px 40px;
-}
+
 .huojiang_img
 {
 	width: 100%;

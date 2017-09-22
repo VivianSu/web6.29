@@ -1,10 +1,12 @@
 @charset "utf-8";
 /* CSS Document */
-body{ background:url(../img/bg4.png);}
+body{ margin: 0px;}
 #contain 
-{
-	width:1149px;
-	margin:auto;
+{    
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+
 	font-family: "STXingkai";
 }
 a:hover,a:link,a:visited
@@ -15,42 +17,55 @@ a:hover,a:link,a:visited
 /*-------------------logo----------------------------*/
 #logo
 {
-	float:left;
-	width:850px;
-	height:180px;
+	width:100%;
+	height:200px;
+	margin: 0px;
+	background: #05284a;
+	border-bottom: #abcdd2 5px solid;
+	/*background: #224f77;*/
 }
-#zhcn
-{
-	margin-top: -50px;
-	padding-left: 60px;
-	text-align:left;
-	font-size: 35px;
-	font-family: "STXingkai";
+
+
+.t_font{
+
+	float: left;
+	margin-top: 50px;
+	margin-left: 5px;
+	width: 65%;
 }
-#English
-{
-	padding-top: 10px;
-	padding-left: 10px;
-	text-align: center;
-	font-size: 20px;
-	font-weight: 800;
-	font-family: "微软雅黑";
-	color: rgb(204,204,204);
+.en_font
+{  
+	float: left;
+	margin-left: 10px;
+	width: 700px;
 }
-#logo_img
-{
-	float: right;
-	margin:-50px 10px 700px 0px;
+
+#img_logo
+{   
+	float: left;
+	margin-left: 10px;
+	margin: 50px 0px 0px 5%;;
+	width: 230px;
+	height: 110px;
+	/*border: black thin solid;*/
 }
 /*-------------------logo----------------------------*/
 
 /*-------------------竖形导航----------------------------*/
+.menu_line{
+	width: 240px;
+    float: left;
+    font-size: 10px;
+    color: #abcdd2;
+    border: #abcdd2 solid 2px;
+}
 #menu
-{
-	float:left;
+{   
+	float: left;
 	width:240px;
 	height:870px;
-	padding-top: 50px;
+	margin-left: 30px;
+	padding-top: 60px;
 	border-left: 2px solid rgb(204,204,204);
 	border-right: 2px solid rgb(204,204,204);
 }
@@ -70,38 +85,39 @@ a:hover,a:link,a:visited
 	background-color: rgb(146,177,194);
 	
 }
-#img_logo
-{
-	margin: 0px 0px 60px 0px;
-	width: 230px;
-	height: 110px;
-	/*border: black thin solid;*/
-}
+
 /*-------------------竖形导航----------------------------*/
 
 /*-------------------底部开始----------------------------*/
 #foot
 {
-	float: left;
-	margin-top: 20px;
-	border-top: rgb(204,204,204) thin solid;
-	/*width: 100%;*/
 	width: 100%;
-	padding:20px 20px 0px 0px;
-	height: 120px;
-	font-size: 13px;
+	height: 200px;
+	margin-top: -5px;
+    font-size: 13px;
+    padding-top: 20px;
+    background: #224f77;
+    color: white;
+
 }
+
+.foot_line 
+{
+    border: 1px solid #224f77;
+    margin-top: 15px;
+
+}
+
+
 #foot_left
 {
-	float: left;
-	text-align: center
-	/*width: 70px;*/
-	color: black;
+	width: 200px;
+	text-align: center;
+	padding: 10px 20px 10px 20px;
+	color: white;
 	border-left:rgb(204,204,204) thin solid; 
 	border-right:rgb(204,204,204) thin solid; 
-	padding: 0px 20px 0px 35px;
-	margin:0px 400px 0px 550px;
-	/*margin:auto;*/
+	margin:auto;
 
 }
 #foot_left:hover
@@ -109,27 +125,37 @@ a:hover,a:link,a:visited
 	border-left:rgb(146,177,194) thin solid; 
 	border-right:rgb(146,177,194) thin solid; 	
 }
+#foot_left a{
+	color: white;
+	margin: auto;
+}
 #foot_left a:hover
 {
 	color: rgb(146,177,194);
 }
 #foot_bottom
 {
-	float: left;
 	margin-top: 2px;
-	width: 600px;
-	margin:0px 400px;
+	margin: auto;
 	height: auto;	
 	text-align: center;
 }
 /*-------------------底部开始----------------------------*/
 
 /*-------------------主要内容----------------------------*/
+.content_line{
+	width:  800px;
+	margin-left: 20px;
+	float: left;
+	font-size: 10px;
+    color: #abcdd2;
+    border: #abcdd2 solid 2px;
+
+}
 #content
 {
-	float:left;
-	width:850px;
-	margin:-40px 0px auto -30px;
+    width:90%;
+	margin: auto;
 }
 #picture
 {
@@ -146,7 +172,6 @@ a:hover,a:link,a:visited
 	width: 700px;
     border: 2px solid rgb(154,205,50);
 	height:300px; 
-	margin:-220px 10px 10px 100px; 
 	overflow:hidden;
 	text-overflow:clip;
 }
@@ -162,6 +187,13 @@ a:hover,a:link,a:visited
 /*-------------------主页结束----------------------------*/
 /*-------------------教师成员页面开始------------------------*/
 
+
+.member_part{
+   float: left;
+    width: 800px; 
+	margin: 10px auto 0px auto;
+}
+
 .member_line
 {
 	border: rgb(112,173,71) 1px solid; 
@@ -170,10 +202,12 @@ a:hover,a:link,a:visited
 }
 
 .member_text
-{
+{   
+	float: left;
 	width: 205px;
 	height: 310px;
 	padding:0 5px 0 5px;
+	margin: 10px;
 	border: 2px solid rgb(154,205,50);
 	text-align: center;
 
@@ -274,28 +308,46 @@ a:hover,a:link,a:visited
 	/*padding-top: 25px;*/
 	/*border: thin solid black; */
 	margin: 10px 0px 0px -20px;	
-	border-right: 3px solid rgb(204,204,204); 
 	/*position: fixed;
 	top: 208px;
 	left: 136px;*/
 }
 #content_con
 {
-	float: right;
-	width: 630px;
+	float: left;
+	width: 700px;
 	height: auto;
-	margin: 0px 10px 0px 20px;
+	margin: 0px 10px 0px 50px;
 	/*border: thin solid black; */
 }
-.content_nav_det
-{
-	/*margin: 10px 0px 0px 0px;*/
+.content_nav_det {
+    width: 180px;
+    height: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 3px solid #05284a;
+}
+.contact_nav_det{
 
+	width: 180px;
+    height: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 3px solid #05284a;
+}
+.content_nav_det_long{
+	width: 300px;
+    height: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 3px solid #05284a;
 }
 .content_nav_title
 {
-	/*margin: -35px 0px 0px 25px;*/
-	/*border: thin solid black;*/
+     float: right;
 }
 #content_nav
 {
@@ -304,11 +356,22 @@ a:hover,a:link,a:visited
 #summary
 {
 	float: left;
+	margin-left: 10px;
+
+}
+#summary_title_no_right
+{
+
+	float: left;
+	color: #8B4726;
+	margin: 20px 0px 0px 50px;
+
 }
 #summary_title,#GYGC_title,#title2_title,#title3_title,#title4_title,#title5_title,#title6_title,#title7_title,#title8_title
-{
+{  
+	float: left;
 	color: #8B4726;
-	margin: 20px 0px 20px 30px;
+	margin: 20px 0px 0px 10px;
 }
 #GYGC_text,#summary_text,#title2_text,#title3_text,#title4_text,#title5_text,#title6_text,#title7_text,#title8_text
 {
@@ -332,10 +395,14 @@ a:hover,a:link,a:visited
 	float: left;
 }
 /*-------------------课程介绍教授页面结束------------------------*/
+
+
 /*-------------------团队页面结束------------------------*/
 #page3_text
 {
+	float: left;
 	width: 600px;
+	margin: 10px 40px 20px 40px;
     border: 2px solid rgb(154,205,50);
 
 }
@@ -354,7 +421,7 @@ a:hover,a:link,a:visited
 }
 .link
 {   
-	margin: 0px 0px 0px 25px;
+	margin: 0;
 	color:grey;
 }
 .link:hover
@@ -364,6 +431,19 @@ a:hover,a:link,a:visited
 .border
 {
 	margin: -10px 0 0 15px;
+}
+
+#projectgroup_title{
+
+	float: left;
+	margin: 0px 0px 0px 100px;
+	width:700px; 
+	
+}
+#projectgroup_title1{
+	float: left;
+	margin: 10px 0px 0px -30px;
+
 }
 /*-------------------团队页面结束------------------------*/
 
@@ -390,8 +470,8 @@ a:hover,a:link,a:visited
 .facilities_con
 {
 	float: left;
-	width: 360px;
-	margin: 40px 30px 40px 30px;
+	width: 320px;
+	margin: 40px 10px 40px 40px;
 }
 .facilities_img
 {
@@ -426,7 +506,7 @@ a:hover,a:link,a:visited
 	float: left;
 	height: auto;
 	width: 680px;
-	margin: 30px 0px 30px 0px;
+	margin: 30px 0px 30px 30px;
 }
 #sparetimezh_title1_title,#sparetimezh_title2_title,#sparetimezh_title3_title,#sparetimezh_title4_title,#sparetimezh_title5_title,#sparetimezh_title6_title,#sparetimezh_title7_title,#sparetimezh_title8_title,#sparetimezh_title9_title,#sparetimezh_title10_title,#sparetimezh_title11_title,#sparetimezh_title12_title,#sparetimezh_title13_title，#sparetimezh_title2015_title
 {
@@ -467,11 +547,11 @@ a:hover,a:link,a:visited
 }
 #contact_con
 {
-	float: right;
+	float: left;
 	width: 680px;
 	height: 1500px;
-	margin: 0px 0px 0px 0px;
-	padding: 0px 0px 0px 120px;
+	margin: 0px 0px 30px 20px;
+	padding: 0px 20px 0px 80px;
 	border-left: 2px solid rgb(154,205,50);
 	border-right: 2px solid rgb(154,205,50);
 }
@@ -542,9 +622,7 @@ a:hover,a:link,a:visited
   {
   	width:650px;
   	border: 2px solid rgb(154,205,50);
-  	margin-left: 150px;
-  	margin-top: 60px;
-
+  	margin: 10px 0px 10px 30px;
  }
 
  #page4_text p
@@ -596,21 +674,26 @@ a:hover,a:link,a:visited
 /*----------------------igem开始------------------------------*/
 #igem_con
 {
-	float: right;
-	width: 80%;
+	float: left;
+	width: 70%;
+	margin-left: 20px;
 	height: auto;
+}
+
+.ig_titile{
+	margin-left: 50px;
 }
 #igem_intr
 {
-	float: right;
+	float: left;
 	width: 90%;
-	margin: 10px 20px 40px auto;
+	/*margin: 10px 20px 40px 10px;*/
 	padding: 5px 20px;
   	border: 1px solid rgb(154,205,50);
 }
 #bit-china_intr,#igem_links
 {
-	float: right;
+	float: left;
 	width: 90%;
 	margin: 10px 20px 40px auto;
 	padding: 5px 20px ;
@@ -696,4 +779,12 @@ a:hover,a:link,a:visited
 {
 	text-align: center;
 }
-/*-----------------研究成果开始------------------- */
+
+.mid_content{
+	margin: 0;
+    float: left;
+    width: 740px;
+}
+/*-----------------研究成果结束------------------- */
+
+
